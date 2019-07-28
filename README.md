@@ -1,24 +1,11 @@
-# README
+## Docker Rails Template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### In order to generate the Rails skeleton
 
-Things you may want to cover:
+Run the following command to generate the Rails skeleton using postgresql without dependencies.
+`docker-compose run web rails new . --force --no-deps --database=postgresql`
 
-* Ruby version
+Once this has been ran and the Gemfile has been run `docker-compose build` to build the image again. 
 
-* System dependencies
+To create the Rails database run `docker-compose run web rails db:create`.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
